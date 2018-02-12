@@ -8,24 +8,24 @@ class Game
   def play
 
     if @hand1 == "scissors" && @hand2 == "paper"
-      return "#{@hand1} beats #{@hand2}!"
+      return "#{@hand1.upcase} beats #{@hand2.upcase}!"
     end
     if @hand1 == "paper" && @hand2 == "scissors"
-      return "#{@hand2} beats #{@hand1}!"
+      return "#{@hand2.upcase} beats #{@hand1.upcase}!"
     end
 
     if @hand1 == "scissors" && @hand2 == "rock"
-      return "#{@hand2} beats #{@hand1}!"
+      return "#{@hand2.upcase} beats #{@hand1.upcase}!"
     end
     if @hand1 == "rock" && @hand2 == "scissors"
-      return "#{@hand1} beats #{@hand2}!"
+      return "#{@hand1.upcase} beats #{@hand2.upcase}!"
     end
 
     if @hand1 == "rock" && @hand2 == "paper"
-      return "#{@hand2} beats #{@hand1}!"
+      return "#{@hand2.upcase} beats #{@hand1.upcase}!"
     end
     if @hand1 == "paper" && @hand2 == "rock"
-      return "#{@hand1} beats #{@hand2}!"
+      return "#{@hand1.upcase} beats #{@hand2.upcase}!"
     end
 
     if @hand1 == "paper" && @hand2 == "paper"
