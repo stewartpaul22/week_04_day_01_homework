@@ -9,32 +9,21 @@ class Game
 
     if @hand1 == "scissors" && @hand2 == "paper"
       return "#{@hand1.upcase} beats #{@hand2.upcase}!"
-    end
-    if @hand1 == "paper" && @hand2 == "scissors"
+    elsif @hand1 == "paper" && @hand2 == "scissors"
       return "#{@hand2.upcase} beats #{@hand1.upcase}!"
-    end
-
-    if @hand1 == "scissors" && @hand2 == "rock"
+    elsif @hand1 == "scissors" && @hand2 == "rock"
       return "#{@hand2.upcase} beats #{@hand1.upcase}!"
-    end
-    if @hand1 == "rock" && @hand2 == "scissors"
+    elsif @hand1 == "rock" && @hand2 == "scissors"
       return "#{@hand1.upcase} beats #{@hand2.upcase}!"
-    end
-
-    if @hand1 == "rock" && @hand2 == "paper"
+    elsif @hand1 == "rock" && @hand2 == "paper"
       return "#{@hand2.upcase} beats #{@hand1.upcase}!"
-    end
-    if @hand1 == "paper" && @hand2 == "rock"
+    elsif @hand1 == "paper" && @hand2 == "rock"
       return "#{@hand1.upcase} beats #{@hand2.upcase}!"
-    end
-
-    if @hand1 == "paper" && @hand2 == "paper"
+    elsif @hand1 == "paper" && @hand2 == "paper"
       return "Draw!"
-    end
-    if @hand1 == "rock" && @hand2 == "rock"
+    elsif @hand1 == "rock" && @hand2 == "rock"
       return "Draw!"
-    end
-    if @hand1 == "scissors" && @hand2 == "scissors"
+    elsif @hand1 == "scissors" && @hand2 == "scissors"
       return "Draw!"
     end
 
