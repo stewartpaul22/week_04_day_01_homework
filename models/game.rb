@@ -15,17 +15,17 @@ class Game
     result3 = "ROCK beats SCISSORS!"
     result4 = "Draw!"
 
-    return "#{result1} Player #{first_player + 1} wins!" if @players[0] == "scissors" && @players[1] == "paper"
+    return "#{result1}<br> Player #{first_player + 1} wins!" if @players[0] == "scissors" && @players[1] == "paper"
 
-    return "#{result1} Player #{first_player + 1} wins!" if @players[0] == "paper" && @players[1] == "scissors"
+    return "#{result1}<br> Player #{first_player + 1} wins!" if @players[0] == "paper" && @players[1] == "scissors"
 
-    return "#{result3} Player #{first_player + 1} wins!" if @players[0] == "scissors" && @players[1] == "rock"
+    return "#{result3}<br> Player #{first_player + 1} wins!" if @players[0] == "scissors" && @players[1] == "rock"
 
     return "#{result3} Player #{first_player + 1} wins!" if @players[0] == "rock" && @players[1] == "scissors"
 
-    return "#{result2} Player #{first_player + 1} wins!" if @players[0] == "rock" && @players[1] == "paper"
+    return "#{result2}<br> Player #{first_player + 1} wins!" if @players[0] == "rock" && @players[1] == "paper"
 
-    return "#{result2} Player #{first_player + 1} wins!" if @players[0] == "paper" && @players[1] == "rock"
+    return "#{result2}<br> Player #{first_player + 1} wins!" if @players[0] == "paper" && @players[1] == "rock"
 
     return result4 if @players[0] == "paper" && @players[1] == "paper"
 
